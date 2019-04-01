@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>url bookmark</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- LOCAL INFORMATION -->
+    <div class="well">
+      <h3><span class="fa fa-user"></span> Profile </h3>
+
+      <% if (user.local.email) { %>
+      <p><br>
+        <strong>email</strong>:
+        <%= user.local.email %><br>
+      </p>
+
+      <a href="/unlink/local" class="btn btn-default">Remove Account</a>
+      <% } else { %>
+
+      <% } %>
+
+    </div>
+
+    <div class="page-header text-center">
+      <h1>Save your Urls</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+  </div>
+  <div class="col-sm-6">
+
+
+    <ul>
+      <li><a href="funny">Funny</a></li>
+      <li><a href="cute">Cute</a></li>
+    </ul>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body {
+  padding-top: 80px;
+  word-wrap: break-word;
+}
+
+img {
+  height: 200px;
+}
+
+.btn-sm {
+  margin-left: 92%;
+  margin-top: -172px;
+}
+
+div.well {
+  margin-left: 10%;
+}
+
+.well {
+  display: block;
+  margin-left: 50%;
+}
+
+li {
+  list-style: none;
+}
+
+li.message {
+  margin-top: 10px;
+}
+
+.topics {
+  border: 1px solid black;
+  height: 200px;
+  width: 70%;
+  margin-top: 10px;
+  margin-left: 15%;
+}

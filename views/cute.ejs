@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> cute url</title>
+</head>
+
+<body>
+
+  <section>
+    <h2>Cute URLS</h2>
+    <form class="" action="cute" method="post">
+      <input id="urls" type="text" name="" placeholder="url">
+      <input id="funnyBtn" type="button" name="" value="submit">
+    </form>
+
+    <ul class="urls">
+      <% for(var i=0; i<userInput.length; i++) {%>
+      <a href="#">
+        <li class="urls">
+          <span>
+            <%= userInput[i].userInput %></span>
+          <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+        </li>
+      </a>
+      <% } %>
+    </ul>
+
+    <a href="profile">Profile Page</a>
+  </section>
+
+  <script src="cute.js"></script>
+</body>
+
+</html>
