@@ -1,10 +1,27 @@
 body {
   padding-top: 80px;
   word-wrap: break-word;
+  background-color: black;
 }
 
 img {
   height: 200px;
+}
+
+.jumbotron h1 {
+  color: mistyrose;
+  text-shadow: 1px 1px 5px black;
+}
+
+.btn-default {
+  border: 0;
+  background-color: inherit;
+}
+
+.fa-user:before {
+  color: mistyrose;
+  font-size: 20px;
+  text-shadow: 1px 1px 5px black;
 }
 
 .btn-sm {
@@ -35,4 +52,31 @@ li.message {
   width: 70%;
   margin-top: 10px;
   margin-left: 15%;
+}
+
+.container .jumbotron {
+  background-color: #e4e3df;
+}
+
+h1, .h1 {
+  color: mistyrose;
+}
+
+label {
+  color: mistyrose;
+}
+
+.btn-warning {
+  background-color: black;
+  border: 0;
+}
+
+a, li {
+  color: mistyrose;
+  text-align: center;
+  margin-left: 75%;
+}
+
+h2 {
+  color: pink;
 }
