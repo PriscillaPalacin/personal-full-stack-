@@ -1,82 +1,88 @@
 body {
-  padding-top: 80px;
+  padding-top: 30px;
   word-wrap: break-word;
   background-color: black;
+  background-size: contain;
 }
 
 img {
-  height: 200px;
+  height: 300px;
+  width: 80%;
 }
 
-.jumbotron h1 {
-  color: mistyrose;
-  text-shadow: 1px 1px 5px black;
-}
-
-.btn-default {
-  border: 0;
-  background-color: inherit;
-}
-
-.fa-user:before {
-  color: mistyrose;
-  font-size: 20px;
-  text-shadow: 1px 1px 5px black;
-}
-
-.btn-sm {
-  margin-left: 92%;
-  margin-top: -172px;
-}
-
-div.well {
-  margin-left: 10%;
-}
-
-.well {
-  display: block;
-  margin-left: 50%;
-}
-
-li {
-  list-style: none;
-}
-
-li.message {
-  margin-top: 10px;
-}
-
-.topics {
-  border: 1px solid black;
-  height: 200px;
-  width: 70%;
-  margin-top: 10px;
-  margin-left: 15%;
-}
-
-.container .jumbotron {
-  background-color: #e4e3df;
-}
-
-h1, .h1 {
-  color: mistyrose;
+span {
+  color: white;
 }
 
 label {
-  color: mistyrose;
+  color: white;
 }
 
-.btn-warning {
+.cartImg {
+  height: 300px;
+}
+
+.itemContainer {
+  margin-left: 10%;
+}
+
+.container {
+  background-image: url(img/code.jpg);
+  width: 30%;
+  margin-left: 35%;
+}
+
+.fa-cart-plus {
+  color: white;
+  font-size: 20px;
+}
+
+.price {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
   background-color: black;
-  border: 0;
+  margin-left: -12%;
 }
 
-a, li {
-  color: mistyrose;
+a {
+  color: #9c7;
+  font-size: 20px;
+  margin-left: 90%;
+}
+
+h3 {
+  color: #9c7;
+}
+
+h1 {
+  color: #9c7;
+  font-family: 'Righteous', cursive;
   text-align: center;
-  margin-left: 75%;
 }
 
-h2 {
-  color: pink;
+.dropdown {
+  width: 25%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
+
+button {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.userInput {
+  margin-left: 38%;
+}
+
+.tag {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.jumbotron {
+  background-color: black;
+}
+
+.tag {}

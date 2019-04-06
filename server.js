@@ -22,7 +22,7 @@ var db
 // configuration ===============================================================
 mongoose.connect(configDB.url, (err, database) => {
   if (err) return console.log(err)
-  db = database
+  db = database;
   require('./app/routes.js')(app, passport, db);
 }); // connect to our database
 

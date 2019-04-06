@@ -1,51 +1,50 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>url bookmark</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Code Collection</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- LOCAL INFORMATION -->
-    <div class="well">
-      <h3><span class="fa fa-user"></span> Profile </h3>
+  <section class="well">
 
-      <% if (user.local.email) { %>
-      <p><br>
-        <strong>email</strong>:
-        <%= user.local.email %><br>
-      </p>
+    <h3><i class="fas fa-user-secret"></i></span> Profile </h3>
 
-      <a href="/unlink/local" class="btn btn-default">Remove Account</a>
-      <% } else { %>
+    <% if (user.local.email) { %>
+    <p><br>
+      <strong>email</strong>:
+      <%= user.local.email %><br>
+    </p>
 
-      <% } %>
+    <a href="/unlink/local" class="btn btn-default">Remove Account</a>
+    <% } else { %>
 
-    </div>
+    <% } %>
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    <a href="cart">Go to cart</a>
+  </section>
 
-    <div class="page-header text-center">
-      <h1>Save your Urls</h1>
-      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
-    </div>
+  <h1>Comfy Coding Clothing Collection</h1>
 
-  </div>
-  <div class="col-sm-6">
-
-
-    <ul>
-      <li><a href="funny">Funny</a></li>
-      <li><a href="cute">Cute</a></li>
-    </ul>
+  <section class="userInput">
+    <select class="dropdown" name="" onchange="nav(this.value)">
+      <option default>Select An Item</option>
+      <option value="shirts">Shirts</option>
+      <option value="pants">Pants</option>
+      <option value="hats">Hats</option>
+    </select>
+    <button type="button" name="button">Submit</button>
+  </section>
 
 
-    <script src="main.js"></script>
 
+  <script src="main.js" type="text/javascript"></script>
 </body>
 
 </html>
